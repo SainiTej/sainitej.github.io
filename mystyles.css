@@ -164,7 +164,6 @@ img{
     background: #0c0c14;
     z-index: -1;
     opacity: 70%;
-    box-sizing: border-box;
 }
 
 .fixed-top{
@@ -202,7 +201,7 @@ img{
     width: 43px;
     height:43px;
     border-radius: 50px;
-    border: 2px solid blue;
+    border: 2px solid #4ca1a3;
     padding: 10px;
     line-height: 20px;
     text-align: center;
@@ -257,6 +256,7 @@ img{
     top: 0px;
     background-repeat: no-repeat;
     background-position: top left;
+    z-index: 1;
 }
 
 @media(max-width:640px) {
@@ -352,7 +352,7 @@ img{
 }
 
 .social-icons a:nth-child(1){
-    top: -35px;
+    top: -40px;
 }
 
 .social-icons a:nth-child(2){
