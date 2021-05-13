@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
+
+
+html{
+    overflow-x: hidden;
+}
+
+.altBody{
+    background-color: #000000;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+} 
+
+.navbar-brand a img{
+    width: 150px;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img{
+     max-width: 100%;
+ }
+
+*{
+     outline: none !important;
+ }
+
+#iconNav{
+     color: white;
+ }
+
+#iconNav:hover{
+     color: #ffc107;
+     text-decoration: none;
+ }
+
+.header-left{
+    width: 80px;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    background-color: #0c0c14;
+    border-right: 1px solid rgba(11.11,19,0.1);
+    z-index: 99999;
+}
+
+.header-left .top a {
+   background-color: #ffc107;
+   color: white;
+   font-weight: 600;
+   text-decoration: none;
+   font-size: 40px;
+   height: 80px;
+   width: 80px;
+   line-height: 80px;
+   display: inline-block;
+   vertical-align: top;
+   text-align: center;
+}
+
+.header-left .nav-menu{
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.nav-menu li{
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.nav-link{
+    margin: 0;
+    padding: 10px 0;
+    color: white;
+    text-decoration: none;
+    transition: ease all 0.35s;
+    text-align: center;
+}
+
+.nav-link i{
+    font-size: 37px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    
+}
+
+#togglerMenu{
+    background-color:none;
+    border: none;
+}
+
+.mob-header{
+    padding: 15px;
+    display: none;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 11;
+}
+
+.toggler-menu{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-radius: 0;
+    padding: 0;
+    margin-left: 420px;
+    background-color: black;
+    border: none;  
+}
+
+.toggler-menu span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 25px;
+    height: 2px;
+    margin: auto;
+    color: white;
+    background-color: white;
+    box-shadow: 0px -8px 0 0 currentColor, 0px 8px 0 0 currentColor;
+}
+
+@media (max-width:500px) {
+    .mob-header{
+        display: block;
+    }
+
+    .header-left{
+        transition: ease all 0.35s;
+        left: -200px;
+        z-index: 222;
+    }
+
+    .header-left.menu-open{
+        left: 0;
+    }
+}
+
+/* Front Page */
+
+.banner{
+    position: relative;
+    overflow: hidden;
+}
+
+.banner:after{
+    content: '';
+    position: absolute;
+    right: -20vh;
+    bottom: -20vh;
+    width: 120vh;
+    height:120vh ;
+    border-radius:50% ;
+    background: #0c0c14;
+    z-index: -1;
+    opacity: 70%;
+}
+
+.top-fixed{
+    position: absolute;
+    padding: 30px 50px 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.info{
+    margin-left: 195px;
+}
+
+.info label{
+    margin: 0;
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.info label + label{
+    margin-left: 150px;
+}
+
+.social{
+    margin-left: auto;
+    font-size: 20px;
+}
+
+.social a i{
+    margin-right: 10px;
+    color: white;
+    width: 43ox;
+    height: 43px;
+    border-radius: 50px;
+    border: 2px solid white;
+    padding: 10px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.banner .full-screen{
+    min-height: 100vh;
+}
+
+.container .full-screen .box{
+    margin-left: 120px;
+    padding-top: 90px;
+    padding-bottom: 50px;
+}
+
+.box h6{
+   color: white;
+   font-size: 20px;
+   font-weight: 400;
+   margin: 0 0 20px;
+}
+
+.box h1{
+    color: #ffc107;
+    font-size: 65px;
+    font-weight: 500;
+    margin: 0 0 20px;
+    line-height: 1;
+ }
+
+ .role{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0 0 20px;
+ }
+
+ .bio{
+    color: rgb(204, 196, 196);
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 0 20px;
+ }
+
+.banner #frontPic{
+    position: absolute;
+    right: 0;
+    width: 50vw;
+    height: 100%;
+    background-size: cover;
+    top: 0px;
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+@media(max-width:1500px) {
+    .top-fixed .info{
+        display: none;
+    }
+}
+
+@media(max-width:500px) {
+    .banner .box h1{
+        font-size: 50px;
+    }
+}
+
+@media(max-width:500px) {
+    .banner .box h6{
+        font-size: 16px;
+    }
+}
+
+@media(max-width:987px) {
+    .banner #frontPic{
+        opacity: 0.4;
+        width: 100vw;
+    }
+}
+
+
+/* Biography Page */
+
+/* #biography{
+    background: #ffc107;
+} */
+
+.aboutMe .image{
+    border-radius: 50%;
+    border: 5px solid #ffc107;
+    overflow: hidden;
+    position: relative;
+    margin-left: 25%;
+    margin-top: 20%;
+}
+
+.aboutMe .social-icons{
+    position: relative;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    justify-content: center;
+}
+
+.social-icons a{
+    width: 45px;
+    height: 45px;
+    line-height: 41px;
+    background: #0b0b13;
+    border: 2px solid white;
+    color: white;
+    text-align: center;
+    border-radius: 100%;
+    position: relative;
+    margin: 3px;
+    transition: ease all 0.35s;
+    transform: scale(1);
+    margin-top: -50px;
+}
+
+
+/* adjusting the social app icons on the picture border */
+
+.social-icons a i{
+    line-height: inherit;
+}
+
+.social-icons a:nth-child(1){
+    top: -65px;
+    left: 50px;
+    position: relative;
+}
+
+.social-icons a:nth-child(2){
+    top: -20px;
+    left: 50px;
+    position: relative;
+}
+
+.social-icons a:nth-child(3){
+    top: -2px;
+    left: 50px;
+    position: relative;
+}
+
+.social-icons a:nth-child(4){
+    top: -2px;
+    left: 50px;
+    position: relative;
+}
+
+.social-icons a:nth-child(5){
+    top: -20px;
+    left: 50px;
+    position: relative;
+}
+
+.social-icons a:nth-child(6){
+    top: -65px;
+    left: 50px;
+    position: relative;
+}
+
+.social-icons a:hover{
+    transform: scale(1.1);
+    background: #ffc107;
+    color: white;
+}
+
+.aboutInfo{
+    text-align:left;
+    padding-top: 40px;
+    color: white;
+    width: 700px;
+    margin-left: 10%;
+}
+
+.aboutInfo .title{
+    color: #ffc107;
+}
+
+.biographyDetails h3{
+   font-weight: 300;
+   font-size: 27px;
+   text-align: center;
+   position: relative;
+   margin-left: 80px;
+   color: white;
+}
+
+.biographyDetails p{
+    margin: 0;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    margin-left: 80px;
+    color: white;
+ }
+
+ .infoList{
+     padding-top: 15px;
+     color: white;
+ }
+
+ .infoList ul{
+     margin: 0;
+     padding: 0;
+     list-style: none;
+ }
+
+ .infoList li{
+     padding: 4px 0;
+ }
+
+ .infoList label{
+     color: white;
+     margin: 0;
+     font-weight: 400;
+     padding-right: 15px;
+ }
+
+ @media(max-width:500px){
+     .infoList ul{
+         font-size: 10px;
+     }
+ }
