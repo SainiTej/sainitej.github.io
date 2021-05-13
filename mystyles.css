@@ -110,9 +110,10 @@ img{
     position: absolute;
     border-radius: 0;
     padding: 0;
-    margin-left: 420px;
+    margin-left: 370px;
     background-color: black;
     border: none;  
+    margin-top: 7px;
 }
 
 .toggler-menu span{
@@ -152,7 +153,7 @@ img{
     overflow: hidden;
 }
 
-.banner:after{
+.banner::before{
     content: '';
     position: absolute;
     right: -20vh;
@@ -168,7 +169,7 @@ img{
 
 .fixed-top{
     position: absolute;
-    padding: 30px 50px 0;
+    padding: 10px 20px 0;
     top: 0;
     left: 0;
     right: 0;
@@ -181,7 +182,7 @@ img{
 
 .info label{
     margin: 0;
-    color: white;
+    color: #ffc107;
     font-weight: 400;
     font-size: 14px;
 }
@@ -197,11 +198,11 @@ img{
 
 .social a i{
     margin-right: 10px;
-    color: white;
+    color: #ffc107;
     width: 43px;
     height:43px;
     border-radius: 50px;
-    border: 2px solid white;
+    border: 2px solid blue;
     padding: 10px;
     line-height: 20px;
     text-align: center;
@@ -263,6 +264,27 @@ img{
         display: none;
     }
 }
+
+@media(max-width:640px) {
+    .banner .fixed-top .social{
+         font-size: 10px;
+         margin-right: 45px;
+         margin-top: -7px;
+     }
+ }
+
+ @media(max-width:640px) {
+    .banner .fixed-top .social a i{
+         width: 21.5px;
+         height:21.5px;
+         border-radius: 25px;
+         line-height: 10px;
+         text-align: center;
+         padding: 5px;
+         margin-right: 2px;
+}
+     }
+ 
 
 @media(max-width:640px) {
     .banner .box h1{
