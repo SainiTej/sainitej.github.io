@@ -166,7 +166,7 @@ img{
     box-sizing: border-box;
 }
 
-.top-fixed{
+.fixed-top{
     position: absolute;
     padding: 30px 50px 0;
     top: 0;
