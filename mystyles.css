@@ -210,7 +210,8 @@ img{
     min-height: 100vh;
 }
 
-.container .full-screen .box{
+
+.banner .full-screen .box{
     margin-left: 120px;
     padding-top: 90px;
     padding-bottom: 50px;
@@ -247,7 +248,7 @@ img{
 
 .banner #frontPic{
     position: absolute;
-    right: 0;
+    right: 200px;
     width: 50vw;
     height: 100%;
     background-size: cover;
@@ -257,7 +258,7 @@ img{
 }
 
 @media(max-width:1500px) {
-    .top-fixed .info{
+   .banner .top-fixed{
         display: none;
     }
 }
@@ -271,6 +272,7 @@ img{
 @media(max-width:500px) {
     .banner .box h6{
         font-size: 16px;
+        margin: 0 0 10px;
     }
 }
 
@@ -284,17 +286,13 @@ img{
 
 /* Biography Page */
 
-/* #biography{
-    background: #ffc107;
-} */
 
 .aboutMe .image{
     border-radius: 50%;
     border: 5px solid #ffc107;
     overflow: hidden;
     position: relative;
-    margin-left: 25%;
-    margin-top: 20%;
+    
 }
 
 .aboutMe .social-icons{
@@ -329,39 +327,27 @@ img{
 }
 
 .social-icons a:nth-child(1){
-    top: -65px;
-    left: 50px;
-    position: relative;
+    top: -25px;
 }
 
 .social-icons a:nth-child(2){
-    top: -20px;
-    left: 50px;
-    position: relative;
+    top: -8px;
 }
 
 .social-icons a:nth-child(3){
     top: -2px;
-    left: 50px;
-    position: relative;
 }
 
 .social-icons a:nth-child(4){
     top: -2px;
-    left: 50px;
-    position: relative;
 }
 
 .social-icons a:nth-child(5){
-    top: -20px;
-    left: 50px;
-    position: relative;
+    top: -8px;
 }
 
 .social-icons a:nth-child(6){
-    top: -65px;
-    left: 50px;
-    position: relative;
+    top: -25px;
 }
 
 .social-icons a:hover{
@@ -370,11 +356,11 @@ img{
     color: white;
 }
 
-.aboutInfo{
+.aboutInfo .text-white{
     text-align:left;
     padding-top: 40px;
     color: white;
-    width: 700px;
+    width: 300px;
     margin-left: 10%;
 }
 
