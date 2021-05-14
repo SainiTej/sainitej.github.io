@@ -3,7 +3,8 @@ $(document).ready(function(){
 
 $('.banner').ripples({
     dropRadius: 15,
-    perturbance: 0.01,
+    perturbance: 0.03,
   });
-  
+
+
 });
