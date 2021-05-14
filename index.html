@@ -1,10 +1,9 @@
 <html>
     <head>
        <meta charset='utf-8'>
-       <meta http-equiv='X-UA-Compatible' content='IE=edge'>
        <link rel="icon" href="Images/TezzFavicon.png">
        <title>TEZZ 🧡 </title>
-       <meta name='viewport' content='width=device-width, initial-scale=1'>
+       <!-- <meta name="viewport" content="width=device-width, initial-scale=1"/> -->
 
        <!-- Font Awesome Link -->
        <script src="https://kit.fontawesome.com/95656fb749.js" crossorigin="anonymous"></script>
@@ -17,21 +16,6 @@
 
     </head>
     <body class="altBody">
-
-        <div class="mob-header">
-            <div class="d-flex">                             <!-- Just Like a bootstrap flexbox-->
-                <div class="nav navbar-brand">
-                    <a href="">
-                    <img src="Images/profile1.png" alt="">
-                    </a>
-                    <button class="toggler-menu" id="togglerMenu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                </div>
-            </div>
-        </div>
 
         <header class="header-left" id="navbar-collapse-toggle">          <!--This will bring collapse navbar on left after we click toggler-->
             <div class="top">
@@ -74,6 +58,7 @@
         
         <main>
             <section class="banner">
+                <div class="container">
                 <div class="fixed-top d-flex">
                     <div class="info">
                       <label class="label1">+91 7876239520</label>
@@ -90,7 +75,7 @@
                     </div>
                 </div>
 
-                <div class="container-sm">
+                <div class="container">
                     <div class="row full-screen align-items-center">
                         <div col-lg-7>
                             <div class="box">
@@ -107,10 +92,9 @@
                             </div>
                         </div>
                     </div>
-                
-                <div class="me" id="frontPic" style="background-image: url(Images/TezzFront.png)">
+                </div> 
+                <div class="me" id="frontPic" style="background-image: url(Images/TezzFront.png)"></div> 
                 </div>
-            </div> 
             </section>
         </main>
 
@@ -122,7 +106,7 @@
         <section id="biography">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-lg-4" id="Bio-data">
                        <div class="aboutMe">
                            <div class="image">
                                <img src="Images/bioPic.jpeg" alt="">
@@ -140,12 +124,13 @@
                                  <p>B.Tech Student</p>
                                  <h3>Tejendra Saini</h3>
                            </div>
+                           <br><br><br>
                     </div>
-                    <br>
+                    
                     <div class="col-lg-7 ml-auto">
                         <div class="aboutInfo">
                             <div class="title text-white">
-                                <h3>Biography</h3>
+                                <h3> < / ABOUT ME > </h3>
                             </div>
                             <br>
                             <div class="text-white">
@@ -205,11 +190,17 @@
                         </div>
                     </div>
                 </div>
+                <div class="zigzag"></div>
             </div>
         </section>
 
 
-        <br><br><br><br><br>
+
+        
+
+       
+
+
         
         
         

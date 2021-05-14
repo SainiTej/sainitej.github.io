@@ -2,8 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
 
 
-html{
-    overflow-x: hidden;
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 }
 
 .altBody{
@@ -90,62 +96,6 @@ img{
     
 }
 
-#togglerMenu{
-    background-color:none;
-    border: none;
-}
-
-.mob-header{
-    padding: 15px;
-    display: none;
-    position: relative;
-    top: 0;
-    width: 100%;
-    z-index: 11;
-}
-
-.toggler-menu{
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    border-radius: 0;
-    padding: 0;
-    margin-left: 370px;
-    background-color: black;
-    border: none;  
-    margin-top: 7px;
-}
-
-.toggler-menu span{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 25px;
-    height: 2px;
-    margin: auto;
-    color: white;
-    background-color: white;
-    box-shadow: 0px -8px 0 0 currentColor, 0px 8px 0 0 currentColor;
-}
-
-@media (max-width:500px) {
-    .mob-header{
-        display: block;
-    }
-
-    .header-left{
-        transition: ease all 0.35s;
-        left: -200px;
-        z-index: 222;
-    }
-
-    .header-left.menu-open{
-        left: 0;
-    }
-}
-
 /* Front Page */
 
 .banner{
@@ -153,7 +103,7 @@ img{
     overflow: hidden;
 }
 
-.banner::before{
+.banner::after{
     content: '';
     position: absolute;
     right: -20vh;
@@ -168,7 +118,7 @@ img{
 
 .fixed-top{
     position: absolute;
-    padding: 10px 20px 0;
+    padding: 30px 50px 0;
     top: 0;
     left: 0;
     right: 0;
@@ -176,7 +126,7 @@ img{
 }
 
 .info{
-    margin-left: 195px;
+    margin-left: 140px;
 }
 
 .info label{
@@ -186,8 +136,8 @@ img{
     font-size: 14px;
 }
 
-.info label + label{
-    margin-left: 150px;
+.info .label1{
+    margin-right:20px ;
 }
 
 .social{
@@ -213,9 +163,9 @@ img{
 
 
 .banner .full-screen .box{
-    margin-left: 120px;
     padding-top: 90px;
     padding-bottom: 50px;
+    margin-left: 140px;
 }
 
 .box h6{
@@ -249,62 +199,22 @@ img{
 
 .banner #frontPic{
     position: absolute;
-    right: 200px;
+    right: 0px;
     width: 50vw;
     height: 100%;
     background-size: cover;
     top: 0px;
     background-repeat: no-repeat;
     background-position: top left;
-    z-index: 1;
 }
 
-@media(max-width:640px) {
-   .banner .fixed-top .info{
-        display: none;
-    }
-}
-
-@media(max-width:640px) {
-    .banner .fixed-top .social{
-         font-size: 10px;
-         margin-right: 45px;
-         margin-top: -7px;
-     }
- }
-
- @media(max-width:640px) {
-    .banner .fixed-top .social a i{
-         width: 21.5px;
-         height:21.5px;
-         border-radius: 25px;
-         line-height: 10px;
-         text-align: center;
-         padding: 5px;
-         margin-right: 2px;
-}
-     }
- 
-
-@media(max-width:640px) {
-    .banner .box h1{
-        font-size: 50px;
-    }
-}
-
-@media(max-width:640px) {
-    .banner .box h6{
-        font-size: 16px;
-        margin: 0 0 10px;
-    }
-}
 
 @media(max-width:1007px) {
     .banner #frontPic{
         opacity: 0.4;
-        width: 100vw;
+        width: 140vw;
     }
-}
+} 
 
 
 /* Biography Page */
@@ -317,7 +227,6 @@ img{
     position: relative;
     width: 400px;
     height: 400px;
-
 }
 
 .aboutMe .social-icons{
@@ -325,7 +234,6 @@ img{
     bottom: -15px;
     left: 0;
     right: 0;
-    
 }
 
 .social-icons a{
@@ -428,3 +336,12 @@ img{
      font-weight: 400;
      padding-right: 10px;
  }
+
+ .zigzag{
+    background-image: url(Images/zigzag.png);
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-repeat: repeat-x;
+    background-size: auto 6px;
+    background-position: center;
+}
