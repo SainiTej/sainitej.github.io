@@ -1,6 +1,9 @@
-$("button .toggler-menu").click(togglerClicked);
+$(document).ready(function(){
+    "use strict"
 
-function togglerClicked(){
-    $("header-left").toggleClass("mob-header");
-
-}
+$('.banner').ripples({
+    dropRadius: 15,
+    perturbance: 0.01,
+  });
+  
+});
