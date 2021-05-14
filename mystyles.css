@@ -345,3 +345,73 @@ img{
     background-size: auto 6px;
     background-position: center;
 }
+
+
+/* whatido section */
+
+.box1{
+    background: #0b0b13;
+    padding: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    margin: 5px;
+}
+
+.box1:before{
+    content: "";
+    position: absolute;
+    top: -220px;
+    left: -220px;
+    width: 200px;
+    height: 200px;
+    border-radius: 0;
+    z-index: -1;
+    background: #0b0b13;
+    transition: cubic-bezier(0.39,0.58,0.57,1) all 0.55s;
+}
+
+.box1:after{
+    content: "";
+    position: absolute;
+    top: -72px;
+    left: -40px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    z-index: -2;
+    background: #f5d020;
+    background-image: linear-gradient(315deg, #f5d020 0%, #f53803 74%);
+    transition: cubic-bezier(0.39,0.58,0.57,1) all 0.15s;
+}
+
+.fas{
+    font-size: 48px;
+    color: white;
+}
+
+.box1 .content1{
+    padding-top: 25px;
+}
+
+.content1 h5{
+    margin-bottom: 30px;
+    color: white;
+    font-size: 25px;
+}
+
+.box1:hover::before{
+    top: -72px;
+    left: -40px;
+    border-radius: 50%;
+}
+
+.box1:hover:after{
+    content: "";
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+    border-radius: 0;
+    transition: cubic-bezier(0.39,0.58,0.57,1) all 0.55s;
