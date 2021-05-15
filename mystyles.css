@@ -260,14 +260,14 @@ img{
 }
 
 @media(max-width:640px){
-    .full-screen .box role{
+    .full-screen .box .role{
         font-size: 14px;
     }
 }
 
 @media(max-width:640px){
-    .full-screen .box bio{
-        font-size: 12px;
+    .full-screen .box .bio{
+        font-size: 10px;
     }
 }
 
