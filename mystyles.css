@@ -281,7 +281,7 @@ img{
     .banner #frontPic{
         opacity: 0.4;
         width: 140vw;
-        background-image: url(Images/mypic7.png);
+        background-image: url(Images/mypic8.png);
     }
 } 
 
@@ -564,6 +564,17 @@ img{
         }
     }
     
+    /* Skills Section */
+
+    #skills{
+        font-size: 100px;
+        padding-left: 40px;
+        color: white;
+    }
+
+    #skills:hover{
+        color: #ffc107;
+    }
 
     /* Footer section */
 
