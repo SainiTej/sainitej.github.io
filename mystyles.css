@@ -207,9 +207,9 @@ img{
     position: absolute;
     right: 0px;
     width: 50vw;
-    height: 100%;
+    height: 95%;
     background-size: cover;
-    top: 0px;
+    top: 40px;
     background-repeat: no-repeat;
     background-position: top left;
     z-index: 1;
@@ -522,18 +522,81 @@ img{
 
     #row{margin-left: 20px;}
 
-    .projectBox{
-    background: #0b0b13;
+    .projectBox1{
+    background: #511845;
     border-radius: 10px;
     padding-top: 60px;
     padding-bottom: 60px;
     overflow: hidden;
     position: relative;
     margin: 15px;
+    color: white;
+    }
+
+    .projectBox2{
+        background: #0b0b13;
+        border-radius: 10px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        overflow: hidden;
+        position: relative;
+        margin: 15px;
+        color: white;
+        }
+
+    .projectBox .project h3{
+        font-size: 30px;
+        color: #ffc107;
     }
 
     .row .projectBox{
         padding-left: 35px;
         padding-right: 35px;
+        width: 22%;
+        float: left;
     }
+
+    @media(max-width:640px){
+        .row .projectBox{
+            width: 100%;
+            margin-left: -17px;
+        }
+    }
+    
+
+    /* Footer section */
+
+    .footer{
+        text-align: center;
+        color: #f5d020;
+    }
+
+    .footer .footer2 a{
+        margin: 2px;
+    }
+
+     a .fa-Facebook{
+         color:blue;
+     }
+    
+     a .fa-Whatsapp{
+        color: green;
+    }
+
+    a .fa-Linkedin{
+        color: rgb(43, 43, 168);
+    }
+
+    a .fa-Twitter{
+        color: rgb(82, 82, 189);
+    }
+
+    a .fa-github{
+        color: grey;
+    }
+
+    a .fa-Instagram{
+        color: deeppink;
+    }
+
 
