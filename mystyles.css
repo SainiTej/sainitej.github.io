@@ -128,7 +128,7 @@ img{
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1;
+    z-index: 9999;
 }
 
 .info{
@@ -212,8 +212,32 @@ img{
     top: 0px;
     background-repeat: no-repeat;
     background-position: top left;
+    z-index: 1;
+}
+@media(max-width:640px){
+    .banner .info{
+        display: none;
+    }
 }
 
+@media(max-width:640px){
+    .banner .social a i{
+        width: 0px;
+        height:0px;
+        border-radius: 0px;
+        border: 0px solid #4ca1a3;
+        padding: 7px;
+        line-height: 0px;
+        text-align: center;
+        margin-right: 10px;
+    }
+}
+
+@media(max-width:640px){
+    .banner .social {
+        margin-right: -25px;
+    }
+}
 
 @media(max-width:1007px) {
     .banner #frontPic{
@@ -221,6 +245,7 @@ img{
         width: 140vw;
     }
 } 
+
 
 
 /* Biography Page */
@@ -423,5 +448,16 @@ img{
     transition: cubic-bezier(0.39,0.58,0.57,1) all 0.55s;}
 
 
-    /* Certificate Section */
+    /* project Section */
+
+    .projectBox{
+    float: left;
+    background: #0b0b13;
+    padding: 70px;
+    padding-left: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin: 45px;
+    }
 
