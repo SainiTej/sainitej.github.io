@@ -153,11 +153,11 @@ img{
 
 .social a i{
     margin-right: 10px;
-    color: #ffc107;
+    color: white;
     width: 43px;
     height:43px;
     border-radius: 50px;
-    border: 2px solid #4ca1a3;
+    border: 2px solid #f5d020;
     padding: 10px;
     line-height: 20px;
     text-align: center;
@@ -520,14 +520,20 @@ img{
 
     /* project Section */
 
+    #row{margin-left: 20px;}
+
     .projectBox{
-    float: left;
     background: #0b0b13;
-    padding: 70px;
-    padding-left: 30px;
     border-radius: 10px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     overflow: hidden;
     position: relative;
-    margin: 45px;
+    margin: 15px;
+    }
+
+    .row .projectBox{
+        padding-left: 35px;
+        padding-right: 35px;
     }
 
