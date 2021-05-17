@@ -215,7 +215,7 @@ img{
     z-index: 1;
 }
 
-@media(max-width:640px){
+@media(max-width:928px){
     .banner .info{
         display: none;
     }
@@ -231,6 +231,7 @@ img{
         line-height: 0px;
         text-align: center;
         margin-right: 10px;
+        display: inline-block
     }
 }
 
@@ -281,7 +282,6 @@ img{
     .banner #frontPic{
         opacity: 0.4;
         width: 140vw;
-        background-image: url(Images/mypic8.png);
     }
 } 
 
